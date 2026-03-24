@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XNO Airdrop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="timer">Ends in: <span id="countdown">16d 23h 59m 59s</span></div>
+        </header>
+
+        <main id="home">
+            <img src="https://raw.githubusercontent.com/mdjihan80/xno-airdrop-bot/main/images.png" class="logo">
+            <h2>Balance: <span id="balance">0</span> XNO</h2>
+            <button id="claimBtn" onclick="claimXNO()">CLAIM 10,000 XNO</button>
+        </main>
+
+        <nav>
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('task')">Task</button>
+            <button onclick="showPage('refer')">Refer</button>
+            <button onclick="showPage('wallet')">Wallet</button>
+        </nav>
+    </div>
+
+    <div id="popup" class="hidden">
+        <div class="popup-content">
+            <p id="popup-text"></p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
